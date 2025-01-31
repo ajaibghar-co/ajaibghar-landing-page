@@ -1,0 +1,19 @@
+---
+import Head from './Head.astro';
+const { ...props } = Astro.props;
+import downArrow from '../assets/down-arrow.svg';
+import site from '../data/site.json';
+
+---
+<div class="py-4">
+    <h2 class="text-3xl pb-4 px-4 text-center">We work with:</h2>
+    <div class=" grid grid-cols-2 md:grid-cols-3">
+        
+       {site.services.map((spec, index) => <div class="">
+                     <p class="text-xl text-center m-4 ">
+                        {spec}
+                     </p>       
+        </div>
+        )}
+    </div> 
+</div>

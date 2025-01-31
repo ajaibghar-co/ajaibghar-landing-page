@@ -1,0 +1,26 @@
+---
+import Head from './Head.astro';
+const { ...props } = Astro.props;
+import downArrow from '../assets/down-arrow.svg';
+import site from '../data/site.json';
+---
+
+<div class="py6">
+    <h2 class="text-3xl px-4 text-center">Features</h2>
+    <div class="mx-auto md:w-1/2">
+    {site.mediaFeatures.map((spec, index) => 
+        <div class="">
+            <a href={spec.featLink} target="_blank">
+                {/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="absolute top-4 right-4" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                </svg> */}
+            <div class="rounded-xs flex flex-col h-full p-4 m-4 space-y-3">
+                <h2 class="text-xl leading-snug underline">{ spec.featTitle }</h2>
+                <em class="text-sm">{ spec.featDate }</em>
+                {/* <p class="text-md">{ spec.instruction }</p> */}
+            </div>
+            </a>
+        </div>)}
+    </div>
+</div>

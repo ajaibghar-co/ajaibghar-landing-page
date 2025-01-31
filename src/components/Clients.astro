@@ -1,0 +1,19 @@
+---
+import Head from './Head.astro';
+const { ...props } = Astro.props;
+import downArrow from '../assets/down-arrow.svg';
+import site from '../data/site.json';
+import CustomCard from '../components/CustomCard.astro'
+---
+
+<h2 class="text-3xl px-4 text-center">Clients</h2>
+<div class="grid grid-cols-2 mx-auto md:w-1/2">
+{site.clients.map((spec, index) => (
+    <img src={spec} class="mx-auto w-32 h-32 object-contain p-2 md:p-0" />
+    // <CustomCard
+    //     imagePath={spec}
+    //     altText="client logos"
+    // />
+))}
+
+</div>
