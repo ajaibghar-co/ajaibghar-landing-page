@@ -4,10 +4,10 @@
   "bannersubtitle": "We are Ajaibghar.",
   "bannercapabilities": "We bring exciting interventions in arts & culture by combining creative technology, experience design, cultural strategy & community building.",
   "bgVideoList": [
-    "/src/assets/vid/bg-video-output.mp4",
-    "/src/assets/vid/bg-video-output.webm"
+    "/ajaibghar-landing-page/src/assets/vid/bg-video-output.mp4",
+    "/ajaibghar-landing-page/src/vid/bg-video-output.webm"
   ],
-  "bgVidPoster": "/src/assets/img/uploads/bg-video-poster.png",
+  "bgVidPoster": "/ajaibghar-landing-page/src/assets/img/uploads/bg-video-poster.png",
   "services": [
     "Interactive",
     "Web",
@@ -37,12 +37,12 @@
     {
       "year": "2024",
       "link": "https://ajaibghar.substack.com/p/thanks-2024",
-      "featImg": "/src/assets/img/previous2024.jpg"
+      "featImg": "/ajaibghar-landing-page/src/assets/img/previous2024.jpg"
     },
     {
       "year": "2023",
       "link": "https://ajaibghar.substack.com/p/ajaibghar-a-look-back-at-2023",
-      "featImg": "/ajaibghar-landing-page/assets/img/previous2023.jpg"
+      "featImg": "/ajaibghar-landing-page/src/assets/img/previous2023.jpg"
     }
   ],
   "mediaFeatures": [
