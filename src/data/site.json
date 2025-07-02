@@ -17,7 +17,7 @@
     "Design",
     "Futures",
     "Research",
-    "AI", 
+    "AI",
     "Installations",
     "Events"
   ],
@@ -25,12 +25,12 @@
     {
       "link": "1",
       "text": "code.yatra",
-      "description":""
+      "description": ""
     },
     {
       "link": "2",
       "text": "Kaleidoscopic Fields",
-      "description":""
+      "description": ""
     }
   ],
   "previousyears": [
@@ -42,7 +42,7 @@
     {
       "year": "2023",
       "link": "https://ajaibghar.substack.com/p/ajaibghar-a-look-back-at-2023",
-      "featImg": "/src/assets/img/previous2023.jpg"
+      "featImg": "https://ajaibghar-co.github.io/ajaibghar-landing-page/src/assets/img/previous2023.jpg"
     }
   ],
   "mediaFeatures": [
@@ -66,12 +66,12 @@
       "featLine": "Ajaibghar at ACRI Chennai",
       "featLink": "https://www.indiacultureacri.in/post/tech-in-art-24-november-2021",
       "instruction": "Read More"
-    }, 
+    },
     {
-      "featDate":"November 24, 2024",
-      "featTitle":"British Council’s Arts and Technologies in India: Reimagining the Future Report",
-      "featLine":"",
-      "featLink":"https://www.britishcouncil.org/research-insight/arts-technologies-india"
+      "featDate": "November 24, 2024",
+      "featTitle": "British Council’s Arts and Technologies in India: Reimagining the Future Report",
+      "featLine": "",
+      "featLink": "https://www.britishcouncil.org/research-insight/arts-technologies-india"
     }
   ],
   "clients": [
@@ -79,22 +79,22 @@
     "/src/assets/img/jvf logo (3).png",
     "/src/assets/img/hasgeek logo.png"
   ],
-  "team":[
-   { 
-    "name": "Nanditi Khilnani",
-    "bio": "Coming from a technology, management & training background at Google, Nanditi combined her artistic interests to explore intersectional spaces of art-tech to build management & technological solutions for arts & creators through her work at Ajaibghar. She has also led efforts on organisational setup, strategy, programming, and outreach for cultural organisations focused on indigenous music & arts.  As a classically trained Indian vocalist & contemporary guitarist, Nanditi has now ventured into the growing Algorave movement (livecoded generative music). Performing music with code, she has developed Raga-based electronic music along with building learning resources for children to develop musical and coding skills together.",
-    "photo": "/src/assets/img/nanditi-01.png",
-    "link": "https://www.nanditi.com/",
-    "linkedin": "https://in.linkedin.com/in/nanditi",
-    "insta": "https://www.instagram.com/nanditi.k"
-  },
- {
-    "name": "Computational Mama",
-    "bio": "With a long-term experience in Exhibition Design & Museum Management, Ambika ventured into learning, teaching and experimenting with creative coding since 2017. As a co-founder of Ajaibghar and a creative technologist she combines her past expertise of art direction, museum design, and project management in arts with her computational works that are heavily inspired by generative texts, computer vision and machine learning. Her work has been featured in Casey Reas’ (co-founder Processing) recent list of generative artists doing inspiring work. She is a livestreamer on Twitch, creating inclusive spaces and learning opportunities for womxn makers to explore creative computation.",
-    "photo": "/src/assets/img/ambika-01-1-.png",
-    "link": "https://computationalmama.xyz",
-    "linkedin": "https://in.linkedin.com/in/ambika-computational-mama",
-    "insta": "https://www.instagram.com/computational_mama"
-  }
-    ]
+  "team": [
+    {
+      "name": "Nanditi Khilnani",
+      "bio": "Coming from a technology, management & training background at Google, Nanditi combined her artistic interests to explore intersectional spaces of art-tech to build management & technological solutions for arts & creators through her work at Ajaibghar. She has also led efforts on organisational setup, strategy, programming, and outreach for cultural organisations focused on indigenous music & arts.  As a classically trained Indian vocalist & contemporary guitarist, Nanditi has now ventured into the growing Algorave movement (livecoded generative music). Performing music with code, she has developed Raga-based electronic music along with building learning resources for children to develop musical and coding skills together.",
+      "photo": "/src/assets/img/nanditi-01.png",
+      "link": "https://www.nanditi.com/",
+      "linkedin": "https://in.linkedin.com/in/nanditi",
+      "insta": "https://www.instagram.com/nanditi.k"
+    },
+    {
+      "name": "Computational Mama",
+      "bio": "With a long-term experience in Exhibition Design & Museum Management, Ambika ventured into learning, teaching and experimenting with creative coding since 2017. As a co-founder of Ajaibghar and a creative technologist she combines her past expertise of art direction, museum design, and project management in arts with her computational works that are heavily inspired by generative texts, computer vision and machine learning. Her work has been featured in Casey Reas’ (co-founder Processing) recent list of generative artists doing inspiring work. She is a livestreamer on Twitch, creating inclusive spaces and learning opportunities for womxn makers to explore creative computation.",
+      "photo": "/src/assets/img/ambika-01-1-.png",
+      "link": "https://computationalmama.xyz",
+      "linkedin": "https://in.linkedin.com/in/ambika-computational-mama",
+      "insta": "https://www.instagram.com/computational_mama"
+    }
+  ]
 }
