@@ -1,33 +1,35 @@
 ---
 import "../styles/global.css";
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import Services from "../components/Services.astro";
 import Banner from "../components/Banner.astro";
 import Now from "../components/Now.astro";
-import PreviousYears from "../components/PreviousYears.astro"
-import MediaFeatures from "../components/MediaFeatures.astro"
-import Clients from "../components/Clients.astro"
-import Team from "../components/Team.astro"
-import Footer from "../components/Footer.astro"
+import PreviousYears from "../components/PreviousYears.astro";
+import MediaFeatures from "../components/MediaFeatures.astro";
+import Clients from "../components/Clients.astro";
+import Team from "../components/Team.astro";
+import Footer from "../components/Footer.astro";
 import DividerLine from "../components/DividerLine.astro";
+import site from "../data/site.json";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title="Home Page">
-	<Banner />
-	<Services />
-	<DividerLine />
-	<Now />
-	<DividerLine />
-	<PreviousYears />
-	<DividerLine />
-	<MediaFeatures />
-	<DividerLine />
-	<Clients />
-	<DividerLine />
-	<Team />
-	<DividerLine />
-	<Footer />
+    <Banner />
+    <Services />
+    <DividerLine />
+    <Now />
+    <DividerLine />
+    <PreviousYears />
+    <DividerLine />
+    <MediaFeatures />
+    <DividerLine />
+    <Clients />
+
+    <DividerLine />
+    <Team />
+    <DividerLine />
+    <Footer />
 </Layout>

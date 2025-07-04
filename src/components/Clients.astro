@@ -8,13 +8,10 @@ import { Image } from "astro:assets";
 ---
 
 <h2 class="text-3xl px-4 text-center">Clients</h2>
-<div class="grid grid-cols-2 mx-auto md:w-1/2">
+<div class="grid grid-cols-3 mx-auto md:w-1/2">
     {
         site.clients.map((spec, index) => (
-            <img
-                src={spec}
-                class="mx-auto w-32 h-32 object-contain p-2 md:p-0"
-            />
+            <CustomCard imagePath={spec} altText="logos" />
         ))
     }
 </div>
