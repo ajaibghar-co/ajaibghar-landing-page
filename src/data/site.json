@@ -42,12 +42,12 @@
     {
       "year": "2024",
       "link": "https://ajaibghar.substack.com/p/thanks-2024",
-      "featImg": "src/assets/img/previous2024.jpg"
+      "featImg": "/src/assets/img/previous2024.jpg"
     },
     {
       "year": "2023",
       "link": "https://ajaibghar.substack.com/p/ajaibghar-a-look-back-at-2023",
-      "featImg": "src/assets/img/previous2023.jpg"
+      "featImg": "/src/assets/img/previous2023.jpg"
     }
   ],
   "mediaFeatures": [
@@ -93,7 +93,7 @@
     {
       "name": "Nanditi Khilnani",
       "bio": "Coming from a technology, management & training background at Google, Nanditi combined her artistic interests to explore intersectional spaces of art-tech to build management & technological solutions for arts & creators through her work at Ajaibghar. She has also led efforts on organisational setup, strategy, programming, and outreach for cultural organisations focused on indigenous music & arts.  As a classically trained Indian vocalist & contemporary guitarist, Nanditi has now ventured into the growing Algorave movement (livecoded generative music). Performing music with code, she has developed Raga-based electronic music along with building learning resources for children to develop musical and coding skills together.",
-      "photo": "/src/assets/img/nanditi-01.png",
+      "photo": "/src/assets/img/nk.png",
       "link": "https://www.nanditi.com/",
       "linkedin": "https://in.linkedin.com/in/nanditi",
       "insta": "https://www.instagram.com/nanditi.k"
@@ -101,7 +101,7 @@
     {
       "name": "Computational Mama",
       "bio": "With a long-term experience in Exhibition Design & Museum Management, Ambika ventured into learning, teaching and experimenting with creative coding since 2017. As a co-founder of Ajaibghar and a creative technologist she combines her past expertise of art direction, museum design, and project management in arts with her computational works that are heavily inspired by generative texts, computer vision and machine learning. Her work has been featured in Casey Reas’ (co-founder Processing) recent list of generative artists doing inspiring work. She is a livestreamer on Twitch, creating inclusive spaces and learning opportunities for womxn makers to explore creative computation.",
-      "photo": "/src/assets/img/ambika-01-1-.png",
+      "photo": "/src/assets/img/cm.png",
       "link": "https://computationalmama.xyz",
       "linkedin": "https://in.linkedin.com/in/ambika-computational-mama",
       "insta": "https://www.instagram.com/computational_mama"
