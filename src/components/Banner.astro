@@ -1,27 +1,34 @@
 ---
-import Head from './Head.astro';
+import Head from "./Head.astro";
 const { ...props } = Astro.props;
-import downArrow from '../assets/down-arrow.svg';
-import site from '../data/site.json';
+import downArrow from "../assets/down-arrow.svg";
+import site from "../data/site.json";
 ---
 
 <main>
-<div id="container" class="sticky -mt-18 ">
-    <video 
-    playsinline
-    autoplay
-    loop
-    muted
-    class="-z-10 object-cover object-center h-dvh w-full "
-    src={site.bgVideoList[0]}></video>
-<!-- {site.bgVideoList[0]} -->
-     <div id="organicgroup" class="z-10 -mt-[32rem] mb-72 mx-auto px-8 text-center flex flex-col md:w-2/3 space-y-4">
-            <h1 id="organic" class="z-10 text-white text-3xl md:text-6xl font-bold">
-              {site.bannerhead}
+    <div id="container" class="sticky -mt-18">
+        <video
+            playsinline
+            autoplay
+            loop
+            muted
+            class="-z-10 object-cover object-center h-dvh w-full"
+            src={site.bgVideoList[0]}></video>
+        <div
+            id="organicgroup"
+            class="z-10 -mt-[32rem] mb-72 mx-auto px-8 text-center flex flex-col md:w-2/3 space-y-4"
+        >
+            <h1
+                id="organic"
+                class="z-10 text-white text-3xl md:text-6xl font-bold"
+            >
+                {site.bannerhead}
             </h1>
-            <h2 class="z-30 text-white mx-auto text-md md:text-2xl font-regular">
-            {site.bannercapabilities }
-            </h2>  
+            <h2
+                class="z-30 text-white mx-auto text-md md:text-2xl font-regular"
+            >
+                {site.bannercapabilities}
+            </h2>
+        </div>
     </div>
-    </div>
-  </main>
+</main>
