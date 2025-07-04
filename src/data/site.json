@@ -3,10 +3,7 @@
   "bannerhead": "Our work is a tasty mix of organic design, low-carb tech & healthy artistic sensibilities",
   "bannersubtitle": "We are Ajaibghar.",
   "bannercapabilities": "We bring exciting interventions in arts & culture by combining creative technology, experience design, cultural strategy & community building.",
-  "bgVideoList": [
-    "/src/assets/vid/bg-video-output.mp4",
-    "/src/vid/bg-video-output.webm"
-  ],
+  "bgVideoList": ["/src/assets/vid/bg-video-output.mp4"],
   "bgVidPoster": "/src/assets/img/uploads/bg-video-poster.png",
   "services": [
     "Interactive",
