@@ -1,0 +1,18 @@
+---
+const { ...props } = Astro.props;
+---
+
+<pre class="h-screen font-mono -mt-18 mx-auto text-center text-gray-300 -z-20">
+</pre>
+<script>
+    import { run } from "../assets/scripts/run.js";
+    import * as program from "../assets/scripts/test.js";
+    run(program, { element: document.querySelector("pre") })
+        .then(function (e) {
+            console.log(e);
+        })
+        .catch(function (e) {
+            console.warn(e.message);
+            console.log(e.error);
+        });
+</script>

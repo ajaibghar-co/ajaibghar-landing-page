@@ -1,28 +1,47 @@
 ---
-import Head from "./Head.astro";
 const { ...props } = Astro.props;
 import downArrow from "../assets/down-arrow.svg";
 import site from "../data/site.json";
 const year = new Date().getFullYear();
 ---
 
-<h2 class="text-3xl px-4 py-2 text-center">Now</h2>
-<p class="px-4 py-2 text-center">
-    What we are up to this year
+<h2 class="text-4xl px-4 font-bold py-2 text-center">Now</h2>
+<p class="p-4 text-center text-lg font-light">
+    What we are up in
 
     <span class="">{year}</span>
 </p>
 
-<div class="grid grid-cols-2 mx-auto md:w-1/2">
+<div
+    class="flex flex-col mx-auto text-black md:grid md:grid-cols-2 md:gap-2 lg:grid lg:grid-cols-2 lg:gap-3 xl:grid xl:grid-cols-3 xl:gap-3 2xl:grid 2xl:grid-cols-3 2xl:gap-3 w-1/2 [&>*:nth-child(4n-3)]:bg-orange-400 [&>*:nth-child(4n-2)]:bg-stone-400 [&>*:nth-child(4n-1)]:bg-amber-400 [&>*:nth-child(4n+0)]:bg-lime-200"
+>
     {
         site.now.map((spec, index) => (
-            <div class="bg-yellow-400 mx-2 my-3 rounded-sm">
-                <a class="" href={spec.link} target="_blank">
-                    <div class="rounded-xs h-full p-4 text-center flex flex-col justify-center">
-                        {spec.text}
-                    </div>
-                </a>
-            </div>
+            <a
+                class="px-6 w-56 h-56 mx-auto relative"
+                href={spec.link}
+                target="_blank"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    class="absolute top-4 right-4"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                    />
+                </svg>
+                <div class="rounded-xs h-full p-4 text-2xl flex flex-col justify-center">
+                    {spec.text}
+                </div>
+            </a>
         ))
     }
 </div>

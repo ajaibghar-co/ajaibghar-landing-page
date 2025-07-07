@@ -1,17 +1,16 @@
 ---
-import Head from './Head.astro';
 const { ...props } = Astro.props;
 import downArrow from '../assets/down-arrow.svg';
 import site from '../data/site.json';
 import CustomCard from './CustomCard.astro';
 ---
-<h2 class="text-3xl text-center py-8 px-4">  WHO WE ARE</h2>
+<h2 class="text-4xl text-center py-8 px-4 font-bold">Who we are</h2>
 <div class="team grid md:grid-cols-2 gap-2">
         {site.team.map((spec, index) => <div class="mx-3 rounded-sm py-3">
             <!-- <img src={spec.photo} alt={spec.name} class="mx-auto w-48 h-48  object-cover p-2 md:p-0" /> -->
         <CustomCard imagePath={spec.photo} altText="team" />
 
-         <h1 class="text-2xl font-semibold text-center pt-4 pb-4 uppercase">{ spec.name}</h1>
+         <h1 class="text-2xl font-semibold text-center pt-4 pb-4">{ spec.name}</h1>
          <div class="mx-auto links flex flex-row items-center justify-center  pb-4">
               <a class="" href={spec.link} target="_blank">
                 <svg
@@ -60,6 +59,6 @@ import CustomCard from './CustomCard.astro';
                 </svg>
               </a>
             </div>
-<p class="text-center text-lg px-3 max-w-prose md:px-18">{spec.bio}</p>
+<p class="text-center font-regular px-3 max-w-prose md:px-18">{spec.bio}</p>
         </div>
 )}

@@ -1,40 +1,33 @@
 ---
-import Head from "./Head.astro";
 const { ...props } = Astro.props;
 import downArrow from "../assets/down-arrow.svg";
 import site from "../data/site.json";
+import Ascii from "../components/Ascii.astro";
+const { content1, content2 } = Astro.props;
+import { Image } from "astro:assets";
 ---
 
 <main>
-    <div id="container" class="sticky -mt-18">
-        {
-            site.bgVideoList.map((spec, index) => (
-                <video
-                    playsinline
-                    autoplay
-                    loop
-                    muted
-                    class="-z-10 object-cover object-center h-dvh w-full"
-                    src={spec}
+    <div id="container" class="h-screen relative bg-black/25">
+        <Ascii />
+        <div class="absolute top-56 mx-8 sm:mx-8 md:mx-32">
+            <div id="organicgroup" class="z-10 text-center flex flex-col">
+                <h1 id="organic" class="z-10 text-3xl md:text-6xl font-black">
+                    {content1}
+                </h1>
+                <h2
+                    class="z-30 mx-auto text-lg w-full md:text-3xl md:w-2/3 font-regular"
+                >
+                    {content2}
+                </h2>
+            </div>
+            <div class="mt-24 mx-auto place-self-end">
+                <Image
+                    class="w-auto h-10 animate-bounce"
+                    src={downArrow}
+                    alt="Next Project"
                 />
-            ))
-        }
-
-        <div
-            id="organicgroup"
-            class="z-10 -mt-[32rem] mb-72 mx-auto px-8 text-center flex flex-col md:w-2/3 space-y-4"
-        >
-            <h1
-                id="organic"
-                class="z-10 text-white text-3xl md:text-6xl font-bold"
-            >
-                {site.bannerhead}
-            </h1>
-            <h2
-                class="z-30 text-white mx-auto text-md md:text-2xl font-regular"
-            >
-                {site.bannercapabilities}
-            </h2>
+            </div>
         </div>
     </div>
 </main>

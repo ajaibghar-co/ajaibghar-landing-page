@@ -1,12 +1,23 @@
 ---
 import "../styles/global.css";
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Banner from "../components/Banner.astro";
+import site from "../data/site.json";
+const sentences = [
+    "a studio for culture, stories & wonder",
+    "a lab for people, play & exploration",
+    "a lab for discovery, design & experimentation",
+];
+let sent;
+let inter = () => {
+    sent = Math.floor(Math.random() * sentences.length);
+    return sentences[sent];
+};
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+let t = setInterval(inter, 2500);
 ---
 
 <Layout title="About">
-
-	test
+    <Banner content1={inter} content2={site.about.content} client:load />
+    <!-- <Banner content1={sent} content2={site.about.content} /> -->
 </Layout>

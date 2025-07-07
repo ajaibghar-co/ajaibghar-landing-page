@@ -1,5 +1,4 @@
 ---
-import Head from "./Head.astro";
 const { ...props } = Astro.props;
 import downArrow from "../assets/down-arrow.svg";
 import site from "../data/site.json";
@@ -7,8 +6,10 @@ import CustomCard from "../components/CustomCard.astro";
 import { Image } from "astro:assets";
 ---
 
-<h2 class="text-3xl px-4 text-center">Clients</h2>
-<div class="grid grid-cols-3 mx-auto md:w-1/2">
+<h2 class="text-4xl px-4 text-center font-bold">Clients</h2>
+<div
+    class="flex flex-col-reverse mx-auto text-black md:grid md:grid-cols-2 md:gap-2 lg:grid lg:grid-cols-2 lg:gap-3 xl:grid xl:grid-cols-3 xl:gap-3 2xl:grid 2xl:grid-cols-3 2xl:gap-3 w-1/2"
+>
     {
         site.clients.map((spec, index) => (
             <CustomCard imagePath={spec} altText="logos" />
