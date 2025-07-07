@@ -2,17 +2,23 @@
 const { ...props } = Astro.props;
 ---
 
-<pre class="h-screen font-mono -mt-18 mx-auto text-center text-gray-300 -z-20">
+<pre
+    class="h-screen font-mono text-gray-600 -mt-18 mx-auto text-center bg-gradient-to-r from-indigo-500/50 via-purple-500/50 to-pink-500/50 -z-20">
 </pre>
-<script>
-    import { run } from "../assets/scripts/run.js";
-    import * as program from "../assets/scripts/program/new.js";
-    run(program, { element: document.querySelector("pre") })
-        .then(function (e) {
-            console.log(e);
-        })
-        .catch(function (e) {
-            console.warn(e.message);
-            console.log(e.error);
-        });
+<script is:inline type="module">
+    import { run } from "/ajaibghar-landing-page/scripts/run.js";
+    import * as program from "/ajaibghar-landing-page/scripts/program/new.js";
+    // Run settings can override the default- and program seetings.
+    // See the API for details.
+    const settings = {
+        fps: 60,
+        element: document.querySelector("pre"),
+        fontSize: ".7em",
+    };
+
+    // Boot (returns a promise)
+    run(program, settings).catch(function (e) {
+        console.warn(e.message);
+        console.log(e.error);
+    });
 </script>
