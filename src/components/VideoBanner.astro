@@ -6,6 +6,8 @@ import site from "../data/site.json";
     site.bgVideoList.map((spec, index) => (
         <video
             playsinline
+            controlslist="nodownload nofullscreen noremoteplayback disablepictureinpicture"
+            controls
             loop
             muted
             class="-z-10 object-cover object-center h-dvh w-full"
