@@ -3,21 +3,41 @@ import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 import Banner from "../components/Banner.astro";
 import site from "../data/site.json";
-const sentences = [
-    "a studio for culture, stories & wonder",
-    "a lab for people, play & exploration",
-    "a lab for discovery, design & experimentation",
-];
-let sent;
-let inter = () => {
-    sent = Math.floor(Math.random() * sentences.length);
-    return sentences[sent];
-};
+// const sentences = [
+//     "a studio for culture, stories & wonder",
+//     "a lab for people, play & exploration",
+//     "a lab for discovery, design & experimentation",
+// ];
+// let sent;
+// sent = Math.floor(Math.random() * sentences.length);
 
-let t = setInterval(inter, 2500);
+// let inter = () => {
+//     return sentences[sent];
+// };
+
+// let t = setInterval(inter, 2500);
 ---
 
 <Layout title="About">
-    <Banner content1={inter} content2={site.about.content} client:load />
-    <!-- <Banner content1={sent} content2={site.about.content} /> -->
+    <!-- <Banner content1={t} content2={site.about.content} client:load /> -->
+    <Banner content1="est" content2={site.about.content} />
 </Layout>
+<script is:inline>
+    //to use setinterval add "is:inline" to script tag
+    const sentences = [
+        "a studio for culture, stories & wonder",
+        "a lab for people, play & exploration",
+        "a lab for discovery, design & experimentation",
+    ];
+    let el = sentences[0];
+    document.querySelector("#organic").innerHTML = el;
+    let s = 0;
+
+    setInterval(() => {
+        s++;
+        se = Math.floor(Math.random() * sentences.length);
+        el = sentences[se];
+        document.querySelector("#organic").innerHTML = el;
+        console.log(el);
+    }, 2000);
+</script>
