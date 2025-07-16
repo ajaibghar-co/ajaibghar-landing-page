@@ -18,7 +18,10 @@
     "Research",
     "AI",
     "Installations",
-    "Events"
+    "Events",
+    "Music",
+    "Sound",
+    "Performance"
   ],
   "now": [
     {
@@ -87,6 +90,34 @@
     "/src/assets/img/bf.png",
     "/src/assets/img/NYU_Abu_Dhabi_logo.svg",
     "/src/assets/img/goethe.png"
+  ],
+  "imageGallery": [
+    "/src/assets/img/AGcarousel_01.jpeg",
+    "/src/assets/img/AGcarousel_02.jpeg",
+    "/src/assets/img/AGcarousel_03.jpeg",
+    "/src/assets/img/AGcarousel_04.jpeg",
+    "/src/assets/img/AGcarousel_05.jpeg",
+    "/src/assets/img/AGcarousel_06.jpeg",
+    "/src/assets/img/AGcarousel_07.jpeg",
+    "/src/assets/img/AGcarousel_08.jpeg",
+    "/src/assets/img/AGcarousel_09.jpeg",
+    "/src/assets/img/AGcarousel_010.jpeg",
+    "/src/assets/img/AGcarousel_011.jpeg",
+    "/src/assets/img/AGcarousel_012.jpeg",
+    "/src/assets/img/AGcarousel_013.jpeg",
+    "/src/assets/img/AGcarousel_014.jpeg",
+    "/src/assets/img/AGcarousel_015.jpeg",
+    "/src/assets/img/AGcarousel_016.jpeg",
+    "/src/assets/img/AGcarousel_017.jpeg",
+    "/src/assets/img/AGcarousel_018.jpeg",
+    "/src/assets/img/AGcarousel_019.jpeg",
+    "/src/assets/img/AGcarousel_020.jpeg",
+    "/src/assets/img/AGcarousel_021.jpeg",
+    "/src/assets/img/AGcarousel_022.jpeg",
+    "/src/assets/img/AGcarousel_023.jpeg",
+    "/src/assets/img/AGcarousel_024.jpeg",
+    "/src/assets/img/AGcarousel_025.jpeg",
+    "/src/assets/img/AGcarousel_026.jpeg"
   ],
   "team": [
     {

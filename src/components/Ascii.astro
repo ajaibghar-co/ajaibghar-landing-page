@@ -3,7 +3,13 @@ const { ...props } = Astro.props;
 ---
 
 <pre
-    class="h-screen font-mono text-gray-600 -mt-18 mx-auto text-center bg-gradient-to-r from-indigo-500/50 via-purple-500/50 to-pink-500/50 -z-20">
+    class="h-screen font-mono text-gray-600 -mt-18 mx-auto text-center -z-20"
+    style="
+          background-image: linear-gradient(
+          rgba(180, 100, 20, 0.7),
+            rgba(0, 20, 200, 0.7)
+          );
+        ">
 </pre>
 <script is:inline type="module">
     import { run } from "/ajaibghar-landing-page/scripts/run.js";
@@ -11,9 +17,9 @@ const { ...props } = Astro.props;
     // Run settings can override the default- and program seetings.
     // See the API for details.
     const settings = {
-        fps: 60,
+        fps: "14",
         element: document.querySelector("pre"),
-        fontSize: ".7em",
+        fontSize: "1em",
     };
 
     // Boot (returns a promise)

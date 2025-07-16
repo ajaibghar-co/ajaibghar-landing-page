@@ -11,6 +11,7 @@ import Team from "../components/Team.astro";
 import Footer from "../components/Footer.astro";
 import DividerLine from "../components/DividerLine.astro";
 import VideoBanner from "../components/VideoBanner.astro";
+import ImageGalleryBanner from "../components/ImageGalleryBanner.astro";
 import site from "../data/site.json";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -18,8 +19,8 @@ import site from "../data/site.json";
 
 <Layout title="Home Page">
     <Banner content1={site.bannerhead} content2={site.bannercapabilities} />
-    <Services />
-    <DividerLine />
+    <!-- <Services /> -->
+    <!-- <DividerLine /> -->
     <Now />
     <DividerLine />
     <PreviousYears />
@@ -27,7 +28,8 @@ import site from "../data/site.json";
     <MediaFeatures />
     <DividerLine />
     <Clients />
-    <VideoBanner />
+    <!-- <VideoBanner /> -->
+    <ImageGalleryBanner />
     <Team />
     <DividerLine />
     <Footer />

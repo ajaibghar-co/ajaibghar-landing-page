@@ -3,7 +3,7 @@ import { defineConfig } from "astro/config";
 
 import tailwindcss from "@tailwindcss/vite";
 import markdoc from "@astrojs/markdoc";
-
+import splide from "@splidejs/splide";
 import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
@@ -14,6 +14,7 @@ export default defineConfig({
     markdoc({
       allowHTML: true,
     }),
+
     partytown({
       config: {
         forward: ["dataLayer.push"],

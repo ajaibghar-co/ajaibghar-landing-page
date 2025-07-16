@@ -11,8 +11,11 @@
   "dependencies": {
     "@astrojs/markdoc": "^0.12.7",
     "@astrojs/partytown": "^2.1.4",
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "@tailwindcss/vite": "^4.0.0",
     "astro": "^5.1.10",
+    "astro-splide": "^2.0.0",
     "tailwindcss": "^4.0.0"
   }
 }
