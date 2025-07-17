@@ -92,32 +92,31 @@
     "/src/assets/img/goethe.png"
   ],
   "imageGallery": [
-    "/src/assets/img/AGcarousel_01.jpeg",
-    "/src/assets/img/AGcarousel_02.jpeg",
-    "/src/assets/img/AGcarousel_03.jpeg",
-    "/src/assets/img/AGcarousel_04.jpeg",
-    "/src/assets/img/AGcarousel_05.jpeg",
-    "/src/assets/img/AGcarousel_06.jpeg",
-    "/src/assets/img/AGcarousel_07.jpeg",
-    "/src/assets/img/AGcarousel_08.jpeg",
-    "/src/assets/img/AGcarousel_09.jpeg",
-    "/src/assets/img/AGcarousel_010.jpeg",
-    "/src/assets/img/AGcarousel_011.jpeg",
-    "/src/assets/img/AGcarousel_012.jpeg",
-    "/src/assets/img/AGcarousel_013.jpeg",
-    "/src/assets/img/AGcarousel_014.jpeg",
-    "/src/assets/img/AGcarousel_015.jpeg",
-    "/src/assets/img/AGcarousel_016.jpeg",
-    "/src/assets/img/AGcarousel_017.jpeg",
-    "/src/assets/img/AGcarousel_018.jpeg",
-    "/src/assets/img/AGcarousel_019.jpeg",
-    "/src/assets/img/AGcarousel_020.jpeg",
-    "/src/assets/img/AGcarousel_021.jpeg",
-    "/src/assets/img/AGcarousel_022.jpeg",
-    "/src/assets/img/AGcarousel_023.jpeg",
-    "/src/assets/img/AGcarousel_024.jpeg",
-    "/src/assets/img/AGcarousel_025.jpeg",
-    "/src/assets/img/AGcarousel_026.jpeg"
+    { "image": "/src/assets/img/AGcarousel_01.jpeg", "text": "text test 1" },
+    { "image": "/src/assets/img/AGcarousel_02.jpeg", "text": "text test 2" },
+    { "image": "/src/assets/img/AGcarousel_03.jpeg", "text": "text test 3" },
+    { "image": "/src/assets/img/AGcarousel_04.jpeg", "text": "text test 4" },
+    { "image": "/src/assets/img/AGcarousel_05.jpeg", "text": "text test 5" },
+    { "image": "/src/assets/img/AGcarousel_06.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_07.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_08.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_09.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_010.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_011.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_012.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_013.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_015.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_016.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_017.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_018.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_019.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_020.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_021.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_022.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_023.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_024.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_025.jpeg", "text": "text test" },
+    { "image": "/src/assets/img/AGcarousel_026.jpeg", "text": "text test" }
   ],
   "team": [
     {
@@ -137,7 +136,51 @@
       "insta": "https://www.instagram.com/computational_mama"
     }
   ],
+  "collaborators": [
+    {
+      "name": "Anushka",
+      "bio": "anushka bio",
+      "photo": "/img/uploads/meetup 3.png",
+      "link": "opheliagama.github.io"
+    },
+    {
+      "name": "Ajith Ranka",
+      "bio": "ajiths bio",
+      "photo": "/img/uploads/2021-05-21_19-27.png",
+      "link": "https://ajithranka.com/"
+    },
+    {
+      "name": "Denny George",
+      "bio": "denny's bio",
+      "photo": "/img/uploads/IMG_20210523_181852__01.jpg",
+      "link": "denny.com"
+    },
+    {
+      "name": "Pankhuri Z",
+      "bio": "pankhuri's bio",
+      "photo": "/img/uploads/1683794673_microscopic-view-of-amoeba.png",
+      "link": "pankhuri.com"
+    },
+    {
+      "name": "Himanshu E",
+      "bio": "himanshu'sbio",
+      "photo": "/img/uploads/Contagion Homepage Pic.png",
+      "link": "link"
+    },
+    {
+      "name": "Sreeram Venkitesh",
+      "bio": "sreeram's bio",
+      "photo": "/img/uploads/Screenshot 2023-03-09 130828.png",
+      "link": "link"
+    },
+    {
+      "name": "Radha",
+      "bio": "BIO for radha",
+      "photo": "/img/uploads/Screenshot 2023-03-09 154216.png",
+      "link": "radha link"
+    }
+  ],
   "about": {
-    "content": " We bring exciting interventions in creative fields/arts & culture with our experience in technology, covering creative coding, product management, and digital"
+    "content": "Ajaibghar builds product and strategic solutions in Arts & Culture, driven by creative technology and new media. We have a background in museums, events, art direction, design, music, with expertise in cultural strategy, arts programming, project management, digital experiences. We bring exciting interventions in creative fields/arts & culture with our experience in technology, covering creative coding, product management, and digital content/marketing."
   }
 }

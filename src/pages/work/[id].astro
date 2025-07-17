@@ -1,0 +1,47 @@
+---
+import "../../styles/global.css";
+import Layout from "../../layouts/Layout.astro";
+import Head from "../../components/Head.astro";
+import Footer from "../../components/Footer.astro";
+import { Image } from "astro:assets";
+import { getCollection, render } from "astro:content";
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+    const posts = await getCollection("workPosts");
+    return posts.map((post) => ({
+        params: { id: post.id },
+        props: { post },
+    }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout title={post.data.title}>
+    <!-- <div class="hero-image">
+            {
+                heroImage && (
+                    <Image width={1020} height={510} src={heroImage} alt="" />
+                )
+            }
+        </div> -->
+    <div class="prose">
+        <div class="title">
+            <!-- <div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div> -->
+            <h1>{post.data.title}</h1>
+        </div>
+        <Content />
+
+        <Footer />
+    </div>
+</Layout>

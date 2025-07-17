@@ -1,43 +1,41 @@
 ---
 import "@splidejs/splide/css";
-import { SplideExtension, SplideSlide } from "astro-splide";
+import { Splide, SplideTrack, SplideSlide } from "astro-splide";
 import type { Options } from "@splidejs/splide";
 const options: Options = {
     type: "loop",
-    drag: "free",
+    gap: "0.4 rem",
+    autoplay: true,
     focus: "center",
-    perPage: 3,
-    autoScroll: {
-        speed: 3,
-    },
+    pauseOnHover: false,
+    resetProgress: false,
+    height: "30rem",
+    interval: 3000,
 };
 import "../styles/splidestyle.css";
 import site from "../data/site.json";
 import CustomCard from "./CustomCard.astro";
 ---
 
-<SplideExtension
+<Splide
     options={options}
-    class="not-content"
-    options={{
-        // check for options at https://splidejs.com/guides/options/
-        type: "loop", // type of the carousel
-        autoplay: true, // activate autoplay
-        interval: 1000, // autoplay interval in milliseconds
-        pauseOnHover: false, // do not pause autoplay on mouseover
-    }}
+    aria-labelledby="autoplay-example-heading"
+    hasTrack={false}
 >
-    {
-        site.imageGallery.map((spec, index) => (
-            <SplideSlide class="h-dvh   ">
-                <CustomCard imagePath={spec} altText="bannerimages" />
-            </SplideSlide>
-        ))
-    }
-</SplideExtension>
+    <SplideTrack>
+        {
+            site.imageGallery.map((spec, index) => (
+                <SplideSlide class="h-dvh">
+                    <CustomCard imagePath={spec.image} altText="bannerimages" />
+                    <p class="z-50 text-white text-2xl -mt-18 ml-12">
+                        {spec.text}
+                    </p>
+                </SplideSlide>
+            ))
+        }
+    </SplideTrack>
 
-<script>
-    import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-    import { initSplideExtension } from "astro-splide/js/splideExtensionUtils";
-    initSplideExtension({ AutoScroll });
-</script>
+    <div class="splide__progress">
+        <div class="splide__progress__bar"></div>
+    </div>
+</Splide>

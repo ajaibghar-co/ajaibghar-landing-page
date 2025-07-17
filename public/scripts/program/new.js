@@ -29,6 +29,7 @@
 //   const json = response.json();
 //   console.log(json);
 // });
+//
 const TAU = Math.PI * 2;
 const wordArr = [
   "  interactive  ",
@@ -52,11 +53,10 @@ export function main(coord, context, cursor, buffer) {
   const f = Math.floor((1 - Math.sin(a)) * 10) + 1;
   const g = (Math.floor(a / TAU) % 10) + 1;
   const i = (coord.index % (coord.y * g + 1)) % (f % context.cols);
-  let ar = context.frame;
-
   // NOTE: If the function returns ‘undefined’ or ‘null’
   // a space character will be inserted.
   // In some cases ‘i’ may be greater than 2:
   // JavaScript array out of bounds results in ‘undefined’.
+
   return wordArr[i];
 }
