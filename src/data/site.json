@@ -118,6 +118,17 @@
     { "image": "/src/assets/img/AGcarousel_025.jpeg", "text": "text test" },
     { "image": "/src/assets/img/AGcarousel_026.jpeg", "text": "text test" }
   ],
+  "instaFeed": [
+    {
+      "name": "Stunt Night",
+      "link": "https://www.instagram.com/reel/DDCUtmGoeKB"
+    },
+    {
+      "name": "Blob Labs",
+      "link": "https://www.instagram.com/reel/Cq5Y6ACJiP6"
+    },
+    { "name": "TLP", "link": "https://www.instagram.com/reel/CUKy55doL3B" }
+  ],
   "team": [
     {
       "name": "Nanditi Khilnani",
